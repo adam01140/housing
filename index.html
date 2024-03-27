@@ -42,7 +42,7 @@
             const locationOccurred = document.getElementById("locationOccurred").value;
             const licensePlate = document.getElementById("licensePlate").value;
             
-            fetch('//link', {
+            fetch('https://slughousing-1f0ab4a9c26e.herokuapp.com/api/citations', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -65,7 +65,7 @@
         });
 
         function fetchCitations() {
-            fetch('//link')
+            fetch('https://slughousing-1f0ab4a9c26e.herokuapp.com/api/citations')
                 .then(response => response.json())
                 .then(data => {
                     const listDiv = document.getElementById("list");
